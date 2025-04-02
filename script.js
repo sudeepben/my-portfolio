@@ -9,6 +9,12 @@ document.querySelectorAll('.nav-link').forEach(anchor => {
     });
   });
   
+  // Theme Toggle Functionality
+  const themeToggle = document.getElementById('themeToggle');
+  themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('theme-dark');
+  });
+  
   // Back to Top button functionality
   const backToTopButton = document.getElementById('backToTop');
   window.addEventListener('scroll', () => {

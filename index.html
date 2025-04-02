@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Benarjee Sudeep Sampath Pyla - Portfolio</title>
   <!-- Link to CSS file -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <!-- Google Fonts for a modern look -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header id="header">
-    <div class="container">
+    <div class="container header-container">
       <h1>Benarjee Sudeep Sampath Pyla</h1>
       <p>Data Science Graduate Student | Junior Data Engineer | Data Analyst</p>
+      <!-- Theme Toggle Button -->
+      <button id="themeToggle" aria-label="Toggle dark/light theme">Toggle Theme</button>
       <nav>
         <ul id="navbar">
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#education" class="nav-link">Education</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#volunteer" class="nav-link">Volunteer</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
@@ -27,11 +30,17 @@
     </div>
   </header>
 
+  <!-- About Section -->
   <section id="about" class="container section">
     <h2>About Me</h2>
-    <p>Hello! I am currently pursuing my Master of Science in Data Science at the University of Colorado Boulder. With a Bachelor’s in Computer Science and Engineering from Amrita Vishwa Vidyapeetham, I have hands-on experience as a Junior Data Engineer and Data Analyst. I am passionate about data analysis, machine learning, and building impactful solutions.</p>
+    <p>
+      Hello! I am currently pursuing my Master of Science in Data Science at the University of Colorado Boulder.
+      With a Bachelor’s in Computer Science and Engineering from Amrita Vishwa Vidyapeetham, I have hands-on experience
+      as a Junior Data Engineer and Data Analyst. I am passionate about data analysis, machine learning, and building impactful solutions.
+    </p>
   </section>
 
+  <!-- Education Section -->
   <section id="education" class="container section">
     <h2>Education</h2>
     <ul>
@@ -44,6 +53,7 @@
     </ul>
   </section>
 
+  <!-- Skills Section -->
   <section id="skills" class="container section">
     <h2>Technical Skills</h2>
     <p><strong>Programming & Databases:</strong> Python, R, SQL, JavaScript, HTML, CSS</p>
@@ -53,6 +63,7 @@
     <p><strong>Soft Skills:</strong> Communication, Time Management, Attention to Detail, Organization</p>
   </section>
 
+  <!-- Experience Section -->
   <section id="experience" class="container section">
     <h2>Experience</h2>
     <div class="job">
@@ -76,35 +87,71 @@
     </div>
   </section>
 
+  <!-- Volunteer Section -->
+  <section id="volunteer" class="container section">
+    <h2>Volunteer Experience</h2>
+    <div class="volunteer-item">
+      <h3>Member, AI@Amrita</h3>
+      <p>Sep 2021 - Jan 2023 · 1 yr 5 mos</p>
+    </div>
+    <div class="volunteer-item">
+      <h3>Student Volunteer, AYUDH</h3>
+      <p>Nov 2021 - Mar 2022 · 5 mos</p>
+      <p>
+        AYUDH (Awaken Youth; Unites for Dharma) focuses on spreading natural harmony, social justice, cultural heritage, 
+        and personal empowerment. As a volunteer, I led events like Vishuthaineetam, Bharat Mata Pooja, Navsandhya, World No Tobacco Day, and more.
+      </p>
+    </div>
+    <div class="volunteer-item">
+      <h3>Executive Committee Member, AYUDH</h3>
+      <p>Apr 2022 - Dec 2022 · 9 mos</p>
+      <p>
+        Contributed to reforestation efforts through the Amritavan project and organized World No Tobacco Day at my university in May 2022.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
   <section id="projects" class="container section">
     <h2>Projects</h2>
     <div class="project">
       <h3>Sentiment Analysis on Agnipath Scheme</h3>
-      <p>Developed a hybrid model using BiLSTM-CNN and XGBoost to analyze public sentiment on the Agnipath Recruitment Scheme, achieving 84% accuracy. Presented findings at ADCIS 2024.</p>
+      <p>
+        Developed a hybrid model using BiLSTM-CNN and XGBoost to analyze public sentiment on the Agnipath Recruitment Scheme,
+        achieving 84% accuracy. Presented findings at ADCIS 2024.
+      </p>
     </div>
     <div class="project">
       <h3>Nike Online Store Review Analysis</h3>
-      <p>Scraped and analyzed customer reviews from Trustpilot using Python, Pandas, Matplotlib, and NLP techniques to identify key customer issues.</p>
+      <p>
+        Scraped and analyzed customer reviews from Trustpilot using Python, Pandas, Matplotlib, and NLP techniques to identify key customer issues.
+      </p>
     </div>
     <div class="project">
       <h3>Number Plate Detection</h3>
-      <p>Engineered a vehicle number plate detection model with OCR and Canny edge detection, achieving over 98% accuracy.</p>
+      <p>
+        Engineered a vehicle number plate detection model with OCR and Canny edge detection, achieving over 98% accuracy.
+      </p>
     </div>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact" class="container section">
     <h2>Contact</h2>
-    <p><strong>Email:</strong> sudeepsampath27@gmail.com</p>
-    <p><strong>Phone:</strong> +1 720-878-0464</p>
-    <p>
-      <strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/benarjeesudeepsampathpyla" target="_blank">View Profile</a><br>
-      <strong>GitHub:</strong> <a href="https://github.com/sudeepben" target="_blank">View Projects</a>
-    </p>
+    <p>If you'd like to get in touch, please fill out the form below.</p>
+    <form action="https://formspree.io/f/yourFormID" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" required />
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      
+      <button type="submit">Send Message</button>
+    </form>
   </section>
-
-  <footer class="container">
-    <p>&copy; 2025 Benarjee Sudeep Sampath Pyla. All rights reserved.</p>
-  </footer>
 
   <!-- Back to Top Button -->
   <button id="backToTop" title="Go to top">↑</button>
